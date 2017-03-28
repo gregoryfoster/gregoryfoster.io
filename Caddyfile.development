@@ -1,0 +1,23 @@
+localhost:2015
+
+errors {
+  404 404.html
+
+  log logs/errors.log {
+    size 50 # Rotate after 50 MB
+    age  30 # Keep rotated files for 30 days
+    keep 5  # Keep at most 5 log files
+  }
+}
+
+ext .html
+
+log logs/access.log {
+  rotate {
+    size 50 # Rotate after 50 MB
+    age  30 # Keep rotated files for 30 days
+    keep 5  # Keep at most 5 log files
+  }
+}
+
+maxrequestbody 500KB
