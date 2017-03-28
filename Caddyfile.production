@@ -12,6 +12,8 @@ errors {
 
 ext .html
 
+git github.com/gregoryfoster/gregoryfoster.io
+
 gzip
 
 log ../logs/access.log {
